@@ -1,2 +1,1 @@
-Попытка скопировать стартовую страницу Google.
-Практика HTML / CSS.
+Google homepage with pure HTML / CSS.
