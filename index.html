@@ -9,7 +9,14 @@
 
 <body>
     <header>
-
+        <div class="headerBar">
+            <a class="headerLink" href="#">Почта</a>
+            <a class="headerLink" href="#">Картинки</a>
+            <!-- подменю -->
+            <a id="headerLoginLink" href="#">
+                <button type="button" id="headerLoginButton">Войти</button>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -38,7 +45,9 @@
                 </div>
                 
                 <div class="bottomFooter bottomFooterEco">
-                    <a class="bottomFooterLink" href="#"><img src="/images/ecoLogo.png" alt="Eco logo" id="ecoLogo">Нулевой баланс выбросов углекислого газа с 2007 года</a>
+                    <span id="ecoLink">
+                        <a class="bottomFooterLink" href="#"><img src="/images/ecoLogo.png" alt="Eco logo" id="ecoLogo">Нулевой баланс выбросов углекислого газа с 2007 года</a>
+                    </span>
                 </div>
 
                 <div class="bottomFooter bottomFooterService">
