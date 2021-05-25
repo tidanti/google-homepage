@@ -94,6 +94,25 @@ body {
     margin: auto;
 }
 
+#searchLogo {
+    opacity: 0.4;
+    width: 20px;
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    /*top: 10%;*/
+}
+
+#searchInputDiv {
+    display: inline-flex;
+    /*border: 1px solid black;*/
+    position: relative;
+    width: 30%;
+    text-align: center;
+    /*width:available;*/
+    /*height: min-content;*/
+}
+
 #searchInput:focus-visible, #searchInput:hover {
     outline: none;
     border: 1px solid white;
@@ -103,8 +122,8 @@ body {
 #searchInput {
     border: 1px solid lightgray;
     border-radius: 50px;
-    margin: 20px;
-    width: 30%;
+    margin: 20px 0;
+    width: 100%;
     height: 40px;
 }
 
