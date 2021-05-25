@@ -79,12 +79,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 90vh;*/
 }
 
 #mainForm {
-    margin: auto;
-    /*width: 60%;*/
+    /*margin: auto;
+    width: 60%;*/
     /*border: 1px solid black;*/
     text-align: center;
     flex-grow: 1;
@@ -95,21 +94,18 @@ body {
     margin: auto;
 }
 
+#searchInput:focus-visible, #searchInput:hover {
+    outline: none;
+    border: 1px solid white;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
 #searchInput {
     border: 1px solid lightgray;
     border-radius: 50px;
+    margin: 20px;
     width: 30%;
     height: 40px;
-    margin: 20px;
-}
-
-#searchInput:focus-visible {
-    outline: none;
-}
-
-#searchInput:focus-visible, #searchInput:hover {
-    border: none;
-    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
 .mainFormButton {
@@ -117,7 +113,7 @@ body {
     color: #3C4043;
     padding: 10px 15px;
     background-color: #F8F9FA;
-    border: none;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
@@ -184,5 +180,6 @@ body {
 }
 
 .bottomFooterService {
-    
+    min-width: 30%;
+    justify-content: flex-end;
 }
