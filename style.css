@@ -18,26 +18,38 @@ body {
 
 #googleAppsMenu {
     position: absolute;
+    border-radius: 5px;
+    top: 70px;
     right: 0px;
     margin: 0 20px;
-    border: 1px solid black;
+    box-shadow: -1px 1px 5px rgb(32 33 36);
     width: 300px;
+    /*display: none;*/
 }
 
 #googleAppsList {
-    margin: 0;
-    border: 1px solid black;
+    margin: 15px;
+    padding: 0;
     list-style: none;
     display: grid;
     justify-items: stretch;
     align-items: stretch;
-    justify-content: center;
+    justify-content: stretch;
     grid-template-columns: auto auto auto;
     align-content: center;
+    grid-gap: 10px;
 }
 
 .googleAppsListElem {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    /* HERE MUST BE FLEX! INSTEAD TEXT-ALIGN */
+}
 
+.googleAppsListElem:hover {
+    background-color: #00FFFF;
 }
 
 #googleApps {
@@ -58,9 +70,12 @@ body {
     background-color: rgba(60,64,67,0.12);
 }
 
+#googleApps:hover #googleAppsMenu {
+    display: block;
+}
+
 #appsLogo {
-    
-    /*width: 12px;*/
+    /* empty */
 }
 
 .headerLink {
@@ -75,7 +90,7 @@ body {
 }
 
 #headerLoginLink {
-    
+    /* empty */
 }
 
 #headerLoginButton {
@@ -99,16 +114,12 @@ body {
 }
 
 #content {
-    /*border: 1px solid black;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #mainForm {
-    /*margin: auto;
-    width: 60%;*/
-    /*border: 1px solid black;*/
     text-align: center;
     flex-grow: 1;
 }
@@ -124,18 +135,14 @@ body {
     position: absolute;
     top: 40%;
     left: 15px;
-    /*top: 10%;*/
 }
 
 #searchInputDiv {
     display: inline-flex;
-    /*border: 1px solid black;*/
     position: relative;
     width: 30%;
     min-width: 500px;
     text-align: center;
-    /*width:available;*/
-    /*height: min-content;*/
 }
 
 #searchInput:focus-visible, #searchInput:hover {
@@ -188,7 +195,6 @@ body {
 }
 
 .bottomFooter {
-    /*border: 1px solid black;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -212,7 +218,7 @@ body {
 }
 
 .bottomFooterNav {
-
+    /* empty */
 }
 
 .bottomFooterEco {
@@ -222,8 +228,7 @@ body {
 }
 
 #ecoLink {
-    /*border: 1px solid black;*/
-    
+    /* empty */
 }
 
 .bottomFooterService {
